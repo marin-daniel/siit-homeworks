@@ -69,7 +69,15 @@ function showSuccessMessage() {
 
   const urlString = window.location.search;
   const urlParam = new URLSearchParams(urlString);
-  const displayName = urlParam.get('firstName');
+  const displayFirstName = urlParam.get('firstName');
+  const displayLastName = urlParam.get('lastName');
+  const displayGender = urlParam.get('gender');
+  const displayMessage = urlParam.get('message');
+
+  console.log('First Name: ' + displayFirstName);
+  console.log('Last Name: ' + displayLastName);
+  console.log('Gender: ' + displayGender);
+  console.log('Message: ' + displayMessage);
 
   const check = document.createElement('i');
   check.classList.add('fas','fa-check-circle');
@@ -88,13 +96,14 @@ function showSuccessMessage() {
 
   const p = document.createElement('p');  
   p.classList.add('success-message');  
-  p.innerHTML = 'Thank you for contacting us, ' + displayName;
+  p.innerHTML = 'Thank you for contacting us, ' + displayFirstName;
 
   const body = document.querySelector('body');
   closeButton.append(close);
   p.prepend(check);
   p.append(closeButton);
   body.prepend(p);
+
 }
 
 window.addEventListener('DOMContentLoaded', showSuccessMessage);
