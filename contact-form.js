@@ -67,6 +67,10 @@ function showSuccessMessage() {
     return;
   }
 
+  const urlString = window.location.search;
+  const urlParam = new URLSearchParams(urlString);
+  const displayName = urlParam.get('firstName');
+
   const check = document.createElement('i');
   check.classList.add('fas','fa-check-circle');
 
@@ -84,7 +88,7 @@ function showSuccessMessage() {
 
   const p = document.createElement('p');  
   p.classList.add('success-message');  
-  p.innerHTML = 'Thank you for contacting us, ';
+  p.innerHTML = 'Thank you for contacting us, ' + displayName;
 
   const body = document.querySelector('body');
   closeButton.append(close);
