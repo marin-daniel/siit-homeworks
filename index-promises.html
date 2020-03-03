@@ -9,11 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
+    <form action="" class="form"> 
+        <p>
+            <label for="title">Game Title:</label>
+            <br>
+            <input type="text" id="title" name="title" class="js-input">
+        </p>
+        <p>
+            <label for="description">Description:</label>
+            <br>
+            <textarea name="description" cols="30" rows="10" id="description" class="js-input"></textarea>        
+        </p>
+        <p>
+            <label for="imageUrl">Game Image:</label>
+            <br>
+            <input type="text" id="imageUrl" name="imageUrl" class="js-input">
+        </p>  
+        
+        <button type="submit" class="js-addGame">ADD Game</button>
+    </form>
+    
 
       
     
     <div id="gameList">
-        <button class="add">ADD Game</button>
         
     </div>
     
