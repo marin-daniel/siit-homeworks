@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+  }
+  
+html,
+body {   
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+  }
+
+.js-addGame{
+    border: none;
+    color: #fff;
+    background-color: #333;
+    margin: 10px 0;
+    height: 30px;
+    width: 100%;
+}
+
+form{
+    width: 300px;
+    display: block;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color:  #E0D3AF;
+    float: left;
+}
+
+#gameList{
+    width: 800px;
+    height: 450px;;
+    display: block;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color:  #E0D3AF;
+    overflow-y: scroll;
+    float: right;
+}
+
+#gameList p:first-of-type{
+    font-family: 'Muli', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gameList p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#gameList p button{
+    align-self: flex-end;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    height: 30px;
+    width: 90px;
+}
+
+#gameList p a{
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+
+}
+
+article{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color:  #E0D3AF;    
+}
+
+.js-title{
+    font-family: 'Muli', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#description, .js-description{
+    font-family: 'Muli', sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    width: 100%;
+}
+
+img{
+    display: block;
+    max-width:100%;    
+    margin: auto;
+}
+
+.js-editGame, .js-updateGame, .js-cancelEditGame{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    color: #fff;
+    background-color: #333;
+    height: 30px;
+    width: 90px;
+}
+
+#title, #imageUrl, #gameId{
+    width: 100%;
+    height: 30px;
+}
+
+.js-hidden{
+    display: none;
+}
+
+.js-edit-fields{
+    border: 2px solid grey;
+    background-color: white;
+}
