@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Games List</title>
+    <link rel="stylesheet" href="styleClasses.css">
+    <script src="gamesList.model.js" defer></script>
+    <script src="gamesList.view.js" defer></script>
+</head>
+<body>
+    <form action="" class="form"> 
+        <p>
+            <label for="title">Game Title:</label>
+            <br>
+            <input type="text" id="title" name="title" class="js-input">
+        </p>
+        <p>
+            <label for="description">Description:</label>
+            <br>
+            <textarea name="description" cols="30" rows="10" id="description" class="js-input"></textarea>        
+        </p>
+        <p>
+            <label for="imageUrl">Game Image:</label>
+            <br>
+            <input type="text" id="imageUrl" name="imageUrl" class="js-input">
+        </p>  
+        
+        <button type="submit" class="js-addGame">ADD Game</button>
+    </form>
+    
+
+      
+    
+    <div id="gameList">
+        <p>Games List</p>
+        
+    </div>
+    
+    
+</body>
+</html>
