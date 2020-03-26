@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tema-BOM</title>
+    <script src="weather.model.js" defer></script>
+    <script src="weather.view.js" defer></script>
+</head>
+<body>
+    <div class="displayWeather">
+        <p>
+            <label for="celsius">&degC</label>
+            <input type="radio" id="celsius" name="prefTemp" value="celsius">
+            <label for="fahrenheit">&degF</label>
+            <input type="radio" id="fahrenheit" name="prefTemp" value="fahrenheit">
+            <p>Temp: <span class="temp"></span></p>
+        </p>
+        <p>Humidity: <span class="humidity"></span></p>
+        <p>Pressure: <span class="pressure"></span></p>
+    </div>    
+</body>
+</html>
