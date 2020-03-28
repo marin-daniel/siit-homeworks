@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tema-BOM</title>
-    <script src="weather.model.js" defer></script>
-    <script src="weather.view.js" defer></script>
+    <script src="weather.js" defer></script>
 </head>
 <body>
     <div class="displayWeather">
@@ -16,6 +15,7 @@
             <label for="fahrenheit">&degF</label>
             <input type="radio" id="fahrenheit" name="prefTemp" value="fahrenheit">
             <p>Temp: <span class="temp"></span></p>
+            <a id = "map-link" target="_blank"></a>
         </p>
         <p>Humidity: <span class="humidity"></span></p>
         <p>Pressure: <span class="pressure"></span></p>
